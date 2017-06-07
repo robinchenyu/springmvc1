@@ -15,4 +15,10 @@ public class HomeController {
         System.out.println("get request!!!");
         return "home";
     }
+
+    @RequestMapping(value="/h/", method = GET)
+    public String h() {
+        System.out.println("get /h/");
+        return "h";
+    }
 }
