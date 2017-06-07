@@ -19,16 +19,13 @@ public class SpittleController {
     public String spittles(Model model,
                            @RequestParam(defaultValue = "123") String u1) {
         List<SpittlesRep> srList = new ArrayList<SpittlesRep>();
-        String uu = new String();
         System.out.println("get u1" + u1);
         SpittlesRep sr = new SpittlesRep();
         sr.setUsername("robin");
         sr.setAge(13);
         srList.add(sr);
-        uu = "Hello";
         model.addAttribute("srList", srList);
-        model.addAttribute("uu", uu);
-//        model.addAllAttribute("srList", srList);
+        model.addAttribute("u1", u1);
         return "spittles";
     }
 }

@@ -14,6 +14,6 @@
       <c:out value="${spittle.username}"></c:out>
       <c:out value="${spittle.age}"></c:out>
     </c:forEach>
-  <c:out value="${uu}">123</c:out>
+  <c:out value="${u1}"></c:out>
   </body>
 </html>
